@@ -19,7 +19,7 @@ This Hello World App is a pre-work project for CodePath.org's, Mobile App Design
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/qqM0GZC.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/5Wri9yC.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
