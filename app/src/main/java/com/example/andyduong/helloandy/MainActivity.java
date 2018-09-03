@@ -86,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
                 ((EditText) findViewById(R.id.editText)).setText("");
                 // Remove focus from text field
                 ((EditText) findViewById(R.id.editText)).clearFocus();
+                // TODO: I wanted to hide soft keyboard but there is no easy way to do so.
             }
         });
     }
