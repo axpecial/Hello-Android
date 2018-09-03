@@ -2,11 +2,9 @@
 This Hello World App is a pre-work project for CodePath.org's, Mobile App Design Workshop Series.
 
 ## Required User Stories
-- [X] User sees custom text in a label - Hello from {name}!
-- [X] User see custom background color.
+- [X] User sees custom text in a label - Hello from Andy!
+- [X] User sees custom background color.
 - [X] User can tap a button to change the text color of the label.
-  
-</br>
 
 ## Optional User Stories
 - [X] User can tap a button to change the color of the background view.
