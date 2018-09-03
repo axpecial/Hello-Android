@@ -11,10 +11,11 @@
     <EditText
         android:id="@+id/editText"
         android:layout_width="300sp"
-        android:layout_height="100sp"
-        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="37dp" />
+        android:layout_marginBottom="180dp"
+        android:hint="Please type new text to display." />
 
     <TextView
         android:id="@+id/textView"
@@ -22,11 +23,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="162dp"
+        android:layout_marginTop="141dp"
         android:text="Hello from Andy!"
         android:textAlignment="center"
         android:textColor="@android:color/white"
-        android:textSize="30sp"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -34,29 +35,29 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="107dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="25dp"
         android:text="Change Text Color"
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="407dp" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/button"
-        android:layout_centerHorizontal="true"
-        android:text="woof" />
+        android:layout_alignParentStart="true"
+        android:text="Change Background Color" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/button2"
-        android:layout_centerHorizontal="true"
-        android:text="Good luck pupper" />
+        android:layout_alignParentStart="true"
+        android:text="Change Text" />
 
 </RelativeLayout>

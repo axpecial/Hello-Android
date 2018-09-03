@@ -1,6 +1,7 @@
 package com.example.andyduong.helloandy;
 
 import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -21,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                TextView currentTextView = ((TextView) findViewById(R.id.textView));
+                TextView currentTextView = findViewById(R.id.textView);
                 if (currentTextView.getCurrentTextColor() == getResources().getColor(R.color.white)) {
                     currentTextView.setTextColor(
                             getResources().getColor(R.color.black)
@@ -38,11 +39,16 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.button2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                findViewById(R.id.rootView).setBackgroundColor(
-                        getResources().getColor(R.color.orange));
-                ((TextView) findViewById(R.id.textView)).setText(
-                        "GOOD LUCK ^_^"
-                );
+                View currentView = findViewById(R.id.rootView);
+                if (((ColorDrawable)currentView.getBackground()).getColor() == getResources().getColor(R.color.colorAccent)) {
+                    currentView.setBackgroundColor(
+                            getResources().getColor(R.color.orange)
+                    );
+                } else {
+                    currentView.setBackgroundColor(
+                            getResources().getColor(R.color.colorAccent)
+                    );
+                }
             }
         });
 
@@ -55,9 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 // Set the value of the text view to be the user-inputted text, or to a default
                 //  string if no input
                 if (TextUtils.isEmpty(userInput)) {
-                    ((TextView) findViewById(R.id.textView)).setText(
-                            "You've been blessed by the Android pupper. Press the woof button for good luck."
-                    );
+                    ((TextView) findViewById(R.id.textView)).setText("Android is awesome!");
                 }
                 else {
                     ((TextView) findViewById(R.id.textView)).setText(userInput);
