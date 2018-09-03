@@ -1,6 +1,5 @@
 package com.example.andyduong.helloandy;
 
-import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -85,6 +84,8 @@ public class MainActivity extends AppCompatActivity {
                 ((TextView) findViewById(R.id.textView)).setText("Hello from Andy!");
                 // Reset text field to empty
                 ((EditText) findViewById(R.id.editText)).setText("");
+                // Remove focus from text field
+                ((EditText) findViewById(R.id.editText)).clearFocus();
             }
         });
     }
